@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="javascripts/jquery-2.1.4.min.js"></script>
+	</head>
+	<body>
+		<div>1</div>
+		<div>2</div>
+		<script>
+			$.ajax({
+				type:'get',
+				url:'http://localhost:8888/item/list',
+				async:true,
+				success:function(data){
+					console.log('小孩纸！')
+					console.log(data)
+				}
+			})
+		</script>
+	</body>
+</html>
